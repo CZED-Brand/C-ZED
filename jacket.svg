@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <pattern id="corduroyBlack" x="0" y="0" width="16" height="4" patternUnits="userSpaceOnUse">
+      <rect width="16" height="4" fill="#2A2A2A"/>
+      <rect x="0" y="0" width="7" height="4" fill="#222" rx="1"/>
+      <rect x="9" y="0" width="7" height="4" fill="#222" rx="1"/>
+    </pattern>
+    <pattern id="corduroyBlackSleeve" x="0" y="0" width="12" height="3" patternUnits="userSpaceOnUse">
+      <rect width="12" height="3" fill="#252525"/>
+      <rect x="0" y="0" width="5" height="3" fill="#1E1E1E" rx="1"/>
+      <rect x="7" y="0" width="5" height="3" fill="#1E1E1E" rx="1"/>
+    </pattern>
+    <linearGradient id="jacketShadeL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C8A97A" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#C8A97A" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="jacketShadeR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C8A97A" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#C8A97A" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="jacketVGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C8A97A" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="shadowJ">
+      <feDropShadow dx="0" dy="12" stdDeviation="22" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1000" fill="#161008"/>
+
+  <!-- Tan accent lines (corduroy inspiration bg) -->
+  <g opacity="0.04">
+    <line x1="0" y1="0" x2="0" y2="1000" stroke="#C8A97A" stroke-width="8"/>
+    <line x1="20" y1="0" x2="20" y2="1000" stroke="#C8A97A" stroke-width="8"/>
+    <line x1="40" y1="0" x2="40" y2="1000" stroke="#C8A97A" stroke-width="8"/>
+    <line x1="60" y1="0" x2="60" y2="1000" stroke="#C8A97A" stroke-width="8"/>
+    <line x1="80" y1="0" x2="80" y2="1000" stroke="#C8A97A" stroke-width="8"/>
+    <line x1="100" y1="0" x2="100" y2="1000" stroke="#C8A97A" stroke-width="8"/>
+  </g>
+
+  <g filter="url(#shadowJ)">
+
+    <!-- LEFT SLEEVE -->
+    <path d="M125,220 Q80,240 65,310 L80,560 Q85,590 110,600 L195,610 L210,340 Z" fill="url(#corduroyBlackSleeve)"/>
+    <path d="M125,220 Q80,240 65,310 L80,560 Q85,590 110,600 L195,610 L210,340 Z" fill="url(#jacketShadeL)"/>
+    <!-- Sleeve seam -->
+    <path d="M125,220 L195,610" stroke="#C8A97A" stroke-width="1.5" opacity="0.3" fill="none"/>
+    <!-- Cuff left -->
+    <rect x="78" y="580" width="118" height="28" rx="3" fill="#1A1A1A" stroke="#C8A97A" stroke-width="1" stroke-opacity="0.3"/>
+
+    <!-- RIGHT SLEEVE -->
+    <path d="M675,220 Q720,240 735,310 L720,560 Q715,590 690,600 L605,610 L590,340 Z" fill="url(#corduroyBlackSleeve)"/>
+    <path d="M675,220 Q720,240 735,310 L720,560 Q715,590 690,600 L605,610 L590,340 Z" fill="url(#jacketShadeR)"/>
+    <!-- Sleeve seam -->
+    <path d="M675,220 L605,610" stroke="#C8A97A" stroke-width="1.5" opacity="0.3" fill="none"/>
+    <!-- Cuff right -->
+    <rect x="604" y="580" width="118" height="28" rx="3" fill="#1A1A1A" stroke="#C8A97A" stroke-width="1" stroke-opacity="0.3"/>
+
+    <!-- COLLAR / BACK NECK -->
+    <path d="M310,95 Q400,75 490,95 L500,130 Q400,110 300,130 Z" fill="#222"/>
+    <path d="M310,95 Q400,75 490,95 L500,130 Q400,110 300,130 Z" fill="url(#corduroyBlack)" opacity="0.8"/>
+
+    <!-- MAIN BODY -->
+    <path d="
+      M210,220 L125,220
+      L125,220 L210,340
+      L190,840 L390,855
+      L400,855
+      L410,855 L610,840
+      L590,340 L675,220
+      L675,220 L590,220
+      Q540,160 490,130
+      L490,95
+      Q445,78 400,72
+      Q355,78 310,95
+      L310,130
+      Q260,160 210,220
+      Z
+    " fill="url(#corduroyBlack)"/>
+
+    <!-- Shade overlays body -->
+    <path d="M210,220 L310,130 Q260,160 210,340 L190,840 L390,855 L400,680 L400,220 Z" fill="url(#jacketShadeL)" opacity="0.8"/>
+    <path d="M590,220 L490,130 Q540,160 590,340 L610,840 L410,855 L400,680 L400,220 Z" fill="url(#jacketShadeR)" opacity="0.8"/>
+
+    <!-- Center front zip / button placket -->
+    <rect x="390" y="128" width="20" height="727" fill="#1A1A1A"/>
+    <!-- Zip pull -->
+    <rect x="393" y="300" width="14" height="8" rx="2" fill="#C8A97A"/>
+    <circle cx="400" cy="304" r="3" fill="#8B6914"/>
+
+    <!-- Buttons left side -->
+    <circle cx="375" cy="400" r="6" fill="#333" stroke="#C8A97A" stroke-width="1"/>
+    <circle cx="375" cy="450" r="6" fill="#333" stroke="#C8A97A" stroke-width="1"/>
+    <circle cx="375" cy="500" r="6" fill="#333" stroke="#C8A97A" stroke-width="1"/>
+    <circle cx="375" cy="550" r="6" fill="#333" stroke="#C8A97A" stroke-width="1"/>
+
+    <!-- Chest pocket left -->
+    <path d="M225,370 L320,370 L315,440 L220,440 Z" fill="none" stroke="#C8A97A" stroke-width="1.5" stroke-opacity="0.4"/>
+    <line x1="220" y1="370" x2="320" y2="370" stroke="#C8A97A" stroke-width="2" opacity="0.5"/>
+    <!-- Pocket flap detail -->
+    <path d="M220,370 L320,370 L318,385 L222,385 Z" fill="#1E1E1E" opacity="0.8"/>
+
+    <!-- Welt pocket right -->
+    <path d="M480,530 L560,530 L558,560 L478,560 Z" fill="none" stroke="#C8A97A" stroke-width="1.5" stroke-opacity="0.4"/>
+
+    <!-- Shoulder seams -->
+    <path d="M210,220 Q280,215 310,130" stroke="#C8A97A" stroke-width="2" fill="none" opacity="0.4" stroke-dasharray="5,3"/>
+    <path d="M590,220 Q520,215 490,130" stroke="#C8A97A" stroke-width="2" fill="none" opacity="0.4" stroke-dasharray="5,3"/>
+
+    <!-- Hem -->
+    <path d="M190,838 L390,853 L410,853 L610,838" stroke="#C8A97A" stroke-width="2" fill="none" opacity="0.5"/>
+
+    <!-- Vertical vGrad -->
+    <path d="M210,220 L590,220 L610,840 L400,855 L190,840 Z" fill="url(#jacketVGrad)"/>
+
+    <!-- Collar lapels -->
+    <path d="M310,130 Q330,160 355,190 L400,210 L445,190 Q470,160 490,130 Q445,78 400,72 Q355,78 310,130 Z" fill="#222"/>
+    <path d="M310,130 Q330,160 355,190 L400,210 L445,190 Q470,160 490,130 Q445,78 400,72 Q355,78 310,130 Z" fill="url(#corduroyBlack)" opacity="0.6"/>
+    <!-- Collar notch -->
+    <path d="M355,190 Q380,175 400,210 Q420,175 445,190" stroke="#C8A97A" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  </g>
+
+  <!-- C'ZED label on chest -->
+  <rect x="372" y="375" width="0" height="0"/>
+  <text x="272" y="415" font-family="sans-serif" font-size="11" fill="#C8A97A" text-anchor="middle" font-weight="bold" opacity="0.8" letter-spacing="2">C'ZED</text>
+
+  <!-- Product label -->
+  <text x="400" y="968" font-family="sans-serif" font-size="22" fill="#C8A97A" text-anchor="middle" font-weight="bold" letter-spacing="6" opacity="0.7">HALF JACKET</text>
+</svg>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="C'ZED — Corduroy essentials for those actively becoming who they're meant to be. Nairobi-born. Seize your moment." />
+  <title>C'ZED — Seize Your Moment</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">C'ZED</div>
+    <ul class="nav__links">
+      <li><a href="#about">Story</a></li>
+      <li><a href="#drop">Drop 001</a></li>
+      <li><a href="#lifestyle">Lifestyle</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__cta" onclick="scrollToSection('#drop')">Shop Drop</button>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" onclick="closeMenu()">Story</a></li>
+      <li><a href="#drop" onclick="closeMenu()">Drop 001</a></li>
+      <li><a href="#lifestyle" onclick="closeMenu()">Lifestyle</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__texture"></div>
+    <div class="hero__content">
+      <div class="hero__eyebrow reveal-up">Nairobi — Drop 001</div>
+      <h1 class="hero__title reveal-up">C'ZED</h1>
+      <p class="hero__tagline reveal-up">Seize <em>your</em> moment.</p>
+      <p class="hero__sub reveal-up">Corduroy essentials for those actively becoming<br>who they are meant to be.</p>
+      <button class="btn btn--hero reveal-up" onclick="scrollToSection('#drop')">
+        <span class="btn__text">Enter Drop</span>
+        <span class="btn__icon">↓</span>
+      </button>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+    <div class="hero__badge">
+      <div class="hero__badge-inner">
+        <span>NEW</span>
+        <span>DROP</span>
+        <span>001</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>SEIZE YOUR MOMENT</span>
+      <span>·</span>
+      <span>DROP 001</span>
+      <span>·</span>
+      <span>NAIROBI</span>
+      <span>·</span>
+      <span>CORDUROY ESSENTIALS</span>
+      <span>·</span>
+      <span>BECOME WHO YOU ARE</span>
+      <span>·</span>
+      <span>SEIZE YOUR MOMENT</span>
+      <span>·</span>
+      <span>DROP 001</span>
+      <span>·</span>
+      <span>NAIROBI</span>
+      <span>·</span>
+      <span>CORDUROY ESSENTIALS</span>
+      <span>·</span>
+      <span>BECOME WHO YOU ARE</span>
+      <span>·</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__container">
+      <div class="about__left">
+        <div class="about__label fade-in">Our Story</div>
+        <h2 class="about__heading fade-in">Built for those<br><em>in motion.</em></h2>
+        <div class="about__visual fade-in">
+          <div class="about__fabric">
+            <div class="fabric-line"></div>
+            <div class="fabric-line"></div>
+            <div class="fabric-line"></div>
+            <div class="fabric-line"></div>
+            <div class="fabric-line"></div>
+            <div class="fabric-line"></div>
+            <div class="fabric-line"></div>
+            <div class="fabric-line"></div>
+          </div>
+          <div class="about__stat">
+            <span class="stat-num">001</span>
+            <span class="stat-label">First Drop</span>
+          </div>
+          <div class="about__stat">
+            <span class="stat-num">NBI</span>
+            <span class="stat-label">Origin</span>
+          </div>
+        </div>
+      </div>
+      <div class="about__right fade-in">
+        <p class="about__body">
+          C'ZED designs structured corduroy essentials for individuals who are actively becoming who they are meant to be.
+        </p>
+        <p class="about__body about__body--secondary">
+          We believe your wardrobe should reflect your momentum — the texture of your hustle, the confidence of your direction, and the quiet certainty that you are exactly where you need to be.
+        </p>
+        <div class="about__pillars">
+          <div class="pillar">
+            <span class="pillar__icon">◈</span>
+            <span class="pillar__text">Identity</span>
+          </div>
+          <div class="pillar">
+            <span class="pillar__icon">◈</span>
+            <span class="pillar__text">Growth</span>
+          </div>
+          <div class="pillar">
+            <span class="pillar__icon">◈</span>
+            <span class="pillar__text">Momentum</span>
+          </div>
+          <div class="pillar">
+            <span class="pillar__icon">◈</span>
+            <span class="pillar__text">Confidence</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DROP / COLLECTION -->
+  <section class="drop" id="drop">
+    <div class="drop__header">
+      <div class="drop__label fade-in">Limited Release</div>
+      <h2 class="drop__title fade-in">DROP 001: <span>SEIZE</span></h2>
+      <p class="drop__subtitle fade-in">Structured corduroy essentials. Each piece a statement of intent.</p>
+      <div class="drop__unlock fade-in" id="dropUnlock">
+        <div class="unlock__bar">
+          <div class="unlock__fill" id="unlockFill"></div>
+        </div>
+        <span class="unlock__label" id="unlockLabel">Unlocking collection...</span>
+      </div>
+    </div>
+
+    <div class="drop__grid">
+
+      <!-- Product 1 -->
+      <div class="product-card fade-in" data-product="pants">
+        <div class="product-card__image-wrap">
+          <div class="product-card__image product-card__image--pants">
+            <img src="assets/pants.svg" alt="C'ZED Corduroy Pants — Tan corduroy wide-wale trousers" loading="lazy" />
+          </div>
+          <div class="product-card__tag">Bestseller</div>
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">Corduroy Pants</h3>
+          <p class="product-card__desc">Wide-wale corduroy. Structured fit. Moves with your ambition.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">KES 2,500 – 3,500</span>
+            <a class="btn btn--whatsapp" href="https://wa.me/254700000000?text=Hi!%20I%27d%20like%20to%20order%20the%20C%27ZED%20Corduroy%20Pants%20from%20Drop%20001." target="_blank">
+              <span>Order via WhatsApp</span>
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card fade-in" data-product="shorts">
+        <div class="product-card__image-wrap">
+          <div class="product-card__image product-card__image--shorts">
+            <img src="assets/shorts.svg" alt="C'ZED Corduroy Shorts — Gray corduroy mid-length shorts" loading="lazy" />
+          </div>
+          <div class="product-card__tag product-card__tag--new">New</div>
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">Corduroy Shorts</h3>
+          <p class="product-card__desc">Mid-length. Easy fit. Day to night, without effort.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">KES 1,000 – 1,500</span>
+            <a class="btn btn--whatsapp" href="https://wa.me/254700000000?text=Hi!%20I%27d%20like%20to%20order%20the%20C%27ZED%20Corduroy%20Shorts%20from%20Drop%20001." target="_blank">
+              <span>Order via WhatsApp</span>
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card fade-in" data-product="jacket">
+        <div class="product-card__image-wrap">
+          <div class="product-card__image product-card__image--jacket">
+            <img src="assets/jacket.svg" alt="C'ZED Half Jacket — Black corduroy structured half jacket" loading="lazy" />
+          </div>
+          <div class="product-card__tag product-card__tag--limited">Limited</div>
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">Half Jacket</h3>
+          <p class="product-card__desc">Statement piece. Structured shoulders. Command the room.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">KES 2,500 – 3,000</span>
+            <a class="btn btn--whatsapp" href="https://wa.me/254700000000?text=Hi!%20I%27d%20like%20to%20order%20the%20C%27ZED%20Half%20Jacket%20from%20Drop%20001." target="_blank">
+              <span>Order via WhatsApp</span>
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LIFESTYLE -->
+  <section class="lifestyle" id="lifestyle">
+    <div class="lifestyle__header">
+      <div class="lifestyle__label fade-in">The C'ZED Life</div>
+      <h2 class="lifestyle__title fade-in">One wardrobe.<br><em>Every version of you.</em></h2>
+    </div>
+    <div class="lifestyle__grid">
+      <div class="lifestyle-card fade-in" data-mode="work">
+        <div class="lifestyle-card__num">01</div>
+        <div class="lifestyle-card__icon">◐</div>
+        <h3 class="lifestyle-card__title">Work</h3>
+        <p class="lifestyle-card__text">Structured, purposeful, ready. You walk in and the room knows you mean it.</p>
+        <div class="lifestyle-card__glow"></div>
+      </div>
+      <div class="lifestyle-card fade-in" data-mode="social">
+        <div class="lifestyle-card__num">02</div>
+        <div class="lifestyle-card__icon">◑</div>
+        <h3 class="lifestyle-card__title">Social</h3>
+        <p class="lifestyle-card__text">Effortless transitions. From boardroom to rooftop — no outfit change needed.</p>
+        <div class="lifestyle-card__glow"></div>
+      </div>
+      <div class="lifestyle-card fade-in" data-mode="personal">
+        <div class="lifestyle-card__num">03</div>
+        <div class="lifestyle-card__icon">●</div>
+        <h3 class="lifestyle-card__title">Personal</h3>
+        <p class="lifestyle-card__text">Your truest self. Unhurried. Comfortable in your becoming.</p>
+        <div class="lifestyle-card__glow"></div>
+      </div>
+    </div>
+    <div class="lifestyle__flow fade-in">
+      <div class="flow-dot active"></div>
+      <div class="flow-line"></div>
+      <div class="flow-dot"></div>
+      <div class="flow-line"></div>
+      <div class="flow-dot"></div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE / SEIZE MOMENT -->
+  <section class="seize" id="seize">
+    <div class="seize__bg"></div>
+    <div class="seize__container">
+      <div class="seize__label fade-in">Interactive</div>
+      <h2 class="seize__question fade-in">What are you<br><em>becoming?</em></h2>
+      <div class="seize__output" id="seizeOutput">
+        <p class="seize__message" id="seizeMessage">Press the button and find out.</p>
+      </div>
+      <button class="btn btn--seize fade-in" id="seizeBtn" onclick="revealMoment()">
+        <span class="btn__ripple"></span>
+        <span class="btn__text">Seize Your Moment</span>
+      </button>
+      <div class="seize__counter">
+        <span id="seizeCount">0</span> moments seized today
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__container">
+      <div class="contact__left fade-in">
+        <div class="contact__label">Get in Touch</div>
+        <h2 class="contact__heading">Ready to<br><em>seize yours?</em></h2>
+        <p class="contact__text">DM us, WhatsApp us, or slide into our Instagram. We're real people and we respond.</p>
+      </div>
+      <div class="contact__right fade-in">
+        <a class="contact__btn contact__btn--whatsapp" href="https://wa.me/254700000000?text=Hi%20C%27ZED!%20I%27m%20interested%20in%20Drop%20001." target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span>WhatsApp Us</span>
+        </a>
+        <a class="contact__btn contact__btn--instagram" href="https://instagram.com/czed" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span>Follow on Instagram</span>
+        </a>
+        <div class="contact__location">
+          <span class="contact__location-icon">◎</span>
+          <span>Nairobi, Kenya</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__logo">C'ZED</div>
+      <p class="footer__tagline">Seize your moment.</p>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 C'ZED. All rights reserved.</span>
+      <span>Nairobi — Made with intention.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

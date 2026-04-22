@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <!-- Corduroy wale pattern: vertical ridges -->
+    <pattern id="corduroy" x="0" y="0" width="16" height="4" patternUnits="userSpaceOnUse">
+      <rect width="16" height="4" fill="#C8A97A"/>
+      <rect x="0" y="0" width="7" height="4" fill="#B8976A" rx="1"/>
+      <rect x="9" y="0" width="7" height="4" fill="#B8976A" rx="1"/>
+    </pattern>
+    <pattern id="corduroyDark" x="0" y="0" width="16" height="4" patternUnits="userSpaceOnUse">
+      <rect width="16" height="4" fill="#8B7355"/>
+      <rect x="0" y="0" width="7" height="4" fill="#7A6245" rx="1"/>
+      <rect x="9" y="0" width="7" height="4" fill="#7A6245" rx="1"/>
+    </pattern>
+    <linearGradient id="pantsShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.18"/>
+      <stop offset="40%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.22"/>
+    </linearGradient>
+    <linearGradient id="pantsVGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.15"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <clipPath id="pantsClip">
+      <path d="
+        M240,80 L560,80
+        L590,100
+        L600,320
+        L590,340
+        L510,360
+        L500,380
+        L496,900
+        L470,920
+        L400,925
+        L330,920
+        L304,900
+        L300,380
+        L290,360
+        L210,340
+        L200,320
+        L210,100
+        Z
+      "/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1000" fill="#1A1209"/>
+
+  <!-- Subtle grid bg texture -->
+  <rect width="800" height="1000" fill="none" stroke="#C8A97A" stroke-width="0.3" stroke-opacity="0.06"
+    style="background: repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(200,169,122,0.05) 40px, rgba(200,169,122,0.05) 41px)"/>
+
+  <!-- Waistband -->
+  <rect x="200" y="68" width="400" height="42" rx="4" fill="#1A1A1A"/>
+  <rect x="200" y="68" width="400" height="42" rx="4" fill="url(#corduroyDark)" opacity="0.6"/>
+  <rect x="200" y="68" width="400" height="42" rx="4" fill="url(#pantsShade)"/>
+  <!-- Belt loops -->
+  <rect x="270" y="62" width="14" height="22" rx="3" fill="#111"/>
+  <rect x="395" y="62" width="14" height="22" rx="3" fill="#111"/>
+  <rect x="516" y="62" width="14" height="22" rx="3" fill="#111"/>
+  <!-- Button -->
+  <circle cx="400" cy="78" r="7" fill="#333"/>
+  <circle cx="400" cy="78" r="4" fill="#555"/>
+
+  <!-- Main pants body with corduroy -->
+  <g filter="url(#shadow)">
+    <!-- Left leg -->
+    <path d="M200,108 L295,108 L300,385 L304,905 L400,918 L400,108 Z" fill="url(#corduroy)"/>
+    <!-- Right leg -->
+    <path d="M600,108 L505,108 L500,385 L496,905 L400,918 L400,108 Z" fill="url(#corduroy)"/>
+
+    <!-- Center seam shadow -->
+    <path d="M400,108 L400,918" stroke="#8B7355" stroke-width="3" fill="none" opacity="0.6"/>
+
+    <!-- Shade overlay for depth -->
+    <path d="M200,108 L295,108 L300,385 L304,905 L400,918 L400,108 Z" fill="url(#pantsShade)"/>
+    <path d="M600,108 L505,108 L500,385 L496,905 L400,918 L400,108 Z" fill="url(#pantsShade)"/>
+
+    <!-- Crotch curve -->
+    <path d="M296,108 Q340,200 400,210 Q460,200 504,108" fill="#C8A97A" opacity="0.3"/>
+
+    <!-- Leg crease lines (wale highlight) -->
+    <line x1="252" y1="150" x2="248" y2="870" stroke="#D4B080" stroke-width="1.5" opacity="0.25"/>
+    <line x1="548" y1="150" x2="552" y2="870" stroke="#D4B080" stroke-width="1.5" opacity="0.25"/>
+
+    <!-- Vertical gradient darkening -->
+    <path d="M200,108 L600,108 L505,108 L500,920 L400,930 L300,920 L295,108 Z" fill="url(#pantsVGrad)"/>
+
+    <!-- Pocket detail left -->
+    <path d="M215,140 Q230,180 225,220" stroke="#8B7355" stroke-width="2" fill="none" opacity="0.7"/>
+    <!-- Pocket detail right -->
+    <path d="M585,140 Q570,180 575,220" stroke="#8B7355" stroke-width="2" fill="none" opacity="0.7"/>
+
+    <!-- Hem cuffs -->
+    <rect x="200" y="878" width="196" height="20" rx="2" fill="#A8895A" opacity="0.5"/>
+    <rect x="404" y="878" width="196" height="20" rx="2" fill="#A8895A" opacity="0.5"/>
+  </g>
+
+  <!-- Label tag -->
+  <rect x="370" y="75" width="60" height="28" rx="3" fill="#FAF8F4"/>
+  <text x="400" y="94" font-family="sans-serif" font-size="9" fill="#1A1A1A" text-anchor="middle" font-weight="bold">C'ZED</text>
+
+  <!-- Product label bottom -->
+  <text x="400" y="968" font-family="sans-serif" font-size="22" fill="#C8A97A" text-anchor="middle" font-weight="bold" letter-spacing="6" opacity="0.7">CORDUROY PANTS</text>
+</svg>
