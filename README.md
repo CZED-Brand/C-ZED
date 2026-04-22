@@ -66,7 +66,7 @@ https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/
 
 ## Before going live — update these
 
-**WhatsApp number:** In `index.html`, replace `254700000000` with your number (no + or spaces).
+**WhatsApp number:** In `index.html`, replace `254791003376` with your number (no + or spaces).
 
 **Instagram:** Replace `instagram.com/czed` with your actual handle.
 
